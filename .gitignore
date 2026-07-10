@@ -15,6 +15,7 @@ env/
 # Generated reports & local data changes
 data/reports/
 *.pdf
+assets/*.png
 
 # Operating system files
 .DS_Store
