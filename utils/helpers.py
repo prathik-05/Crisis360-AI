@@ -67,14 +67,18 @@ def render_timeline(current_status):
     
     for i, status in enumerate(statuses):
         step_class = ""
-        if i == current_index:
-            step_class = "active"
-        elif i < current_index:
+        icon = str(i + 1)
+        
+        # If the incident is fully Resolved, show all steps as completed with checkmarks
+        if str(current_status).lower().replace("_", " ") == "resolved":
             step_class = "completed"
-            
-        icon = i + 1
-        if i < current_index:
             icon = "✓"
+        else:
+            if i == current_index:
+                step_class = "active"
+            elif i < current_index:
+                step_class = "completed"
+                icon = "✓"
             
         timeline_html += f"""
         <div class="timeline-step {step_class}">
