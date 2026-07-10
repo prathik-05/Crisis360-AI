@@ -1,0 +1,21 @@
+# Python environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+
+# Credentials and secrets
+.env
+.env.*
+
+# Generated reports & local data changes
+data/reports/
+*.pdf
+
+# Operating system files
+.DS_Store
+Thumbs.db
