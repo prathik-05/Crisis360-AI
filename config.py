@@ -8,6 +8,7 @@ DATA_DIR = BASE_DIR / "data"
 PROMPTS_DIR = BASE_DIR / "prompts"
 ASSETS_DIR = BASE_DIR / "assets"
 UTILS_DIR = BASE_DIR / "utils"
+CSV_PATH = DATA_DIR / "incidents.csv"
 
 # Create directories if they don't exist
 DATA_DIR.mkdir(exist_ok=True)
