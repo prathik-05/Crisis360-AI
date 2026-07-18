@@ -6,6 +6,22 @@ Crisis360 AI is an enterprise-grade emergency decision platform. It integrates *
 
 ---
 
+## 🤖 Project Classification: Langflow Node Workflow & IBM Bob Development
+
+Crisis360 AI is structured as an **Agentic AI Langflow Project** implemented via Python Streamlit, leveraging watsonx.ai and Watson Assistant. 
+
+The application logic mirrors a **Langflow node-link canvas architecture** composed of the following interconnected nodes:
+1.  **Chat Input Node:** Gathers user incident reports via natural language.
+2.  **IBM Watson Assistant Node:** Orchestrates dialogue slots (Description, Location, Headcount, Danger).
+3.  **watsonx.ai Granite Node:** Evaluates severity, priorities, risk indexes, and root causes.
+4.  **Safety Action Generator Node:** Generates incident-specific containment guidelines.
+5.  **CSV Database Node:** Saves and loads transaction logs from `data/incidents.csv`.
+6.  **Chat Output Node / Admin Cockpit:** Visualizes metrics, timelines, and downloadable PDF files.
+
+*The codebase, Streamlit session routing, and API exception handlers were developed and optimized using the **IBM Bob developer assistant** (as certified in our IBM SkillsBuild credentials).*
+
+---
+
 ## 💡 System Architecture: "Why Watson Assistant + watsonx.ai?"
 
 Crisis360 AI demonstrates a clear architectural separation between conversational orchestration and cognitive reasoning.
